@@ -1,4 +1,5 @@
 {
+  "homepage": "https://homergarnet.github.io/homer-portfolio/",
   "name": "beautiful-portfolio",
   "private": true,
   "version": "0.0.0",
@@ -11,7 +12,9 @@
     "build:qa": "tsc -b && vite build --mode qa",
     "build:prod": "tsc -b && vite build --mode prod",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.6",
